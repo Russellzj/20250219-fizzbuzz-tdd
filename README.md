@@ -19,7 +19,7 @@ Fizz Buzz is a simple game used to teach elementary school kids division, but it
 
 ## Recommended Unit Tests
 You should implement at least the following unit tests – but you may add others as you see fit.
-* Any negative number returns empty string
+* -3 returns empty string (even though this is evenly divisible by 3, it is negative)
 * 13 returns empty string (sanity check – it has the number 3, but is not evenly divisible by 3 or 5)
 * 3 returns "Fizz"
 * 21 returns "Fizz"
