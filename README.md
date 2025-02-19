@@ -56,7 +56,7 @@ Assuming you implemented these tests in Part 1, you should first update their ex
 These tests should be updated before any other coding is started. We know that the new requirements make these test cases invalid, and after updating the tests, these should fail. This is expected and ok!
 
 ### New Unit Tests
-These tests should be new for Part 2, and should exercise all the different new combinations that can occur – but consider what other tests you might need (hint hint)!
+These tests should be new for Part 2, and should exercise many of the different new combinations that can occur – but consider what other tests you might need (hint hint)!
 * 24 returns "Fizz Bozz"
 * 35 returns "Buzz Bazz"
 * 56 returns "Bazz Bozz"
@@ -64,7 +64,6 @@ These tests should be new for Part 2, and should exercise all the different new 
 * 120 returns "Fizz Buzz Bozz"
 * 168 returns "Fizz Bazz Bozz"
 * 280 returns "Buzz Bazz Bozz"
-* 840 returns "Fizz Buzz Bazz Bozz"
 
 # C3ProjectTemplate
 -   [C#](Templates/C%23) - [Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/community/)
