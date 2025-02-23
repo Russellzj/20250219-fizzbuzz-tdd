@@ -27,6 +27,44 @@ You should implement at least the following unit tests – but you may add other
 * 40 returns "Buzz"
 * 15 returns "Fizz Buzz"
 
+## Part 2
+Now that we have a solid set of unit tests, let's add some new requirements!
+* All requirements from Part 1 still apply
+* If a number is evenly divisible by 7, the program should say "Bazz"
+* If a number is evenly divisible by 8, the program should say "Bozz"
+* For all the different combinations of 3, 5, 7, 8, return a string containing the appropriate words, ordered by the divisor – for example:
+  * 21 (3, 7) -> "Fizz Bazz"
+  * 56 (7, 8) -> "Bazz Bozz"
+  * 280 (5, 7, 8) -> "Buzz Bazz Bozz"
+  * 840 (3, 5, 7, 8) -> "Fizz Buzz Bazz Bozz"
+
+### TDD Considerations
+Note that some of the unit tests from Part 1 will continue to succeed, but some may fail because of the new requirements.
+
+Before you begin changing/writing code, think about this in a TDD fashion. Consider how you might update tests for the new requirements, so that you can then confidently make changes in the code without fear of breaking existing functionality.
+
+Assuming a good test suite, you should be able to update existing tests to match the new requirements, and write new tests for the new requirements.
+
+### Existing Unit Tests
+Existing Unit Tests to Update
+Assuming you implemented these tests in Part 1, you should first update their expectations for Part 2
+* 21 returns "Fizz"
+  * Now should be "Fizz Bazz" (divisible by 3 and 7)
+* 40 returns "Buzz"
+  * Now should be "Buzz Bozz" (divisible by 5 and 8)
+
+These tests should be updated before any other coding is started. We know that the new requirements make these test cases invalid, and after updating the tests, these should fail. This is expected and ok!
+
+### New Unit Tests
+These tests should be new for Part 2, and should exercise many of the different new combinations that can occur – but consider what other tests you might need (hint hint)!
+* 24 returns "Fizz Bozz"
+* 35 returns "Buzz Bazz"
+* 56 returns "Bazz Bozz"
+* 105 returns "Fizz Buzz Bazz"
+* 120 returns "Fizz Buzz Bozz"
+* 168 returns "Fizz Bazz Bozz"
+* 280 returns "Buzz Bazz Bozz"
+
 # C3ProjectTemplate
 -   [C#](Templates/C%23) - [Microsoft Visual Studio](https://visualstudio.microsoft.com/vs/community/)
 -   [Java](Templates/Java) - [IntelliJ Idea](https://www.jetbrains.com/idea/download) (Community Edition is fine)
