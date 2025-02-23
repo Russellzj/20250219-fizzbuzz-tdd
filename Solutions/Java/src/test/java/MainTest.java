@@ -11,7 +11,7 @@ public class MainTest {
     public void mainPositiveTest() {
         assertTrue(Main.isPositive(5));
         assertFalse(Main.isPositive(0));
-
+    }
 
     @ParameterizedTest
     @DisplayName("Is Divisible")
